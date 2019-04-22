@@ -274,6 +274,7 @@ ${prefix}stop ⇏ لإخرآج البوت من الروم
 ${prefix}np ⇏ لمعرفة الأغنية المشغلة حآليا
 ${prefix}queue ⇏ لمعرفة قآئمة التشغيل
 
+There is Commands Just For مصمم سيرفرات كلمني خاص#1082 | Bot By:مصمم سيرفرات كلمني خاص#1082
  `)//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
    message.channel.sendEmbed(embed)//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
     
