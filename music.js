@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const db = require('quick.db');
-const devs = ['345386910362894336'];
-const developers = ['345386910362894336'];
+const devs = ['318705077734998017'];
+const developers = ['318705077734998017'];
 const client = new Discord.Client();   
 const bot = new Discord.Client();   
 const giphy = require('giphy-api')();    
@@ -251,34 +251,15 @@ function play(guild, song) {
 		.on('end', reason => {//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
 			if (reason === 'Stream is not generating quickly enough.') console.log('Song ended.');
 			else console.log(reason);
-			serverQueue.songs.shift();//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
+			serverQueue.songs.shift();'
 			play(guild, serverQueue.songs[0]);
 		})//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
-		.on('error', error => console.error(error));//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
-	dispatcher.setVolumeLogarithmic(serverQueue.volume / 5);//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
+		.on('error', error => console.error(error));
+	dispatcher.setVolumeLogarithmic(serverQueue.volume / 5);
 
 	serverQueue.textChannel.send(`بدء تشغيل : **${song.title}**`);
-}//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
+}
 
-client.on("message", message => {
- if (message.content === `${prefix}help`) {
-  const embed = new Discord.RichEmbed() //by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
-      .setColor("#000000")//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
-      .setDescription(`
-${prefix}play ⇏ لتشغيل أغنية برآبط أو بأسم
-${prefix}skip ⇏ لتجآوز الأغنية الحآلية
-${prefix}pause ⇏ إيقآف الأغنية مؤقتا
-${prefix}resume ⇏ لموآصلة الإغنية بعد إيقآفهآ مؤقتا
-${prefix}vol ⇏ لتغيير درجة الصوت 100 - 0
-${prefix}stop ⇏ لإخرآج البوت من الروم
-${prefix}np ⇏ لمعرفة الأغنية المشغلة حآليا
-${prefix}queue ⇏ لمعرفة قآئمة التشغيل
 
-There is Commands Just For مصمم سيرفرات كلمني خاص#1082 | Bot By:مصمم سيرفرات كلمني خاص#1082
- `)//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
-   message.channel.sendEmbed(embed)//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
-    
-   }
-      });
 	  
 client.login(process.env.BOT_TOKEN);
