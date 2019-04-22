@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const db = require('quick.db');
-const devs = ['495680518365511721'];
-const developers = ['495680518365511721'];
+const devs = ['345386910362894336'];
+const developers = ['345386910362894336'];
 const client = new Discord.Client();   
 const bot = new Discord.Client();   
 const giphy = require('giphy-api')();    
@@ -274,7 +274,6 @@ ${prefix}stop ⇏ لإخرآج البوت من الروم
 ${prefix}np ⇏ لمعرفة الأغنية المشغلة حآليا
 ${prefix}queue ⇏ لمعرفة قآئمة التشغيل
 
-There is Commands Just For مصمم سيرفرات كلمني خاص#1082 | Bot By:مصمم سيرفرات كلمني خاص#1082
  `)//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
    message.channel.sendEmbed(embed)//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
     
